@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .tableauPlaceholder {
-      width: 800px;
-      margin: 40px auto;
+      width: 640px;
+      margin: 30px auto;
     }
 
     h1 {
@@ -37,12 +37,12 @@
 
   <h1>My Data Visualizations</h1>
 
-  <!-- 1. Tuition Trends by Institution Type (2013–2020) -->
+  <!-- 1. Tuition Trends -->
   <h2>1. Tuition Trends by Institution Type (2013–2020)</h2>
   <div class='tableauPlaceholder' id='viz1' style='position: relative'>
     <noscript>
       <a href='#'>
-        <img alt='Tuition Trends by Institution Type (2013–2020)'
+        <img alt='Tuition Trends'
              src='https://public.tableau.com/static/images/Tu/TuitionTrendsbyInstitutionType20132020/TuitionTrendsbyInstitutionType20132020/1_rss.png'
              style='border: none' />
       </a>
@@ -64,12 +64,12 @@
     </object>
   </div>
 
-  <!-- 2. Average College Tuition by U.S. State (2020) -->
+  <!-- 2. Tuition by State -->
   <h2>2. Average College Tuition by U.S. State (2020)</h2>
   <div class='tableauPlaceholder' id='viz2' style='position: relative'>
     <noscript>
       <a href='#'>
-        <img alt='Average College Tuition by U.S. State (2020)'
+        <img alt='Tuition by State'
              src='https://public.tableau.com/static/images/Av/AverageCollegeTuitionbyU_S_State2020/AverageCollegeTuitionbyU_S_State2020/1_rss.png'
              style='border: none' />
       </a>
@@ -91,13 +91,13 @@
     </object>
   </div>
 
-  <!-- Load Tableau embeds -->
+  <!-- JavaScript -->
   <script type='text/javascript'>
     function loadViz(id) {
       const divElement = document.getElementById(id);
       const vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width = '800px';
-      vizElement.style.height = '600px';
+      vizElement.style.width = '640px';
+      vizElement.style.height = '480px';
       const scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -109,3 +109,4 @@
 
 </body>
 </html>
+
