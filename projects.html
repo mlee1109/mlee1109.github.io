@@ -37,72 +37,68 @@
   <h1>My Data Visualizations</h1>
 
   <h2>1. Tuition Trends by Institution Type (2013–2020)</h2>
-  <div class='tableauPlaceholder' id='viz1'></div>
+  <div class='tableauPlaceholder' id='viz1'>
+    <object class='tableauViz'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='TuitionTrendsbyInstitutionType20132020/TuitionTrendsbyInstitutionType20132020' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
 
   <h2>2. Average College Tuition by U.S. State (2020)</h2>
-  <div class='tableauPlaceholder' id='viz2'></div>
+  <div class='tableauPlaceholder' id='viz2'>
+    <object class='tableauViz'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='AverageCollegeTuitionbyU_S_State2020/AverageCollegeTuitionbyU_S_State2020' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
 
   <h2>3. Total Undergraduate Cost by Institution Type (2020)</h2>
-  <div class='tableauPlaceholder' id='viz3'></div>
+  <div class='tableauPlaceholder' id='viz3'>
+    <object class='tableauViz'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='TotalUndergraduateCostbyInstitutionType2020/TotalUndergraduateCostbyInstitutionType2020' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
 
   <h2>4. Room and Board Cost Trends by Institution Type (2013–2020)</h2>
-  <div class='tableauPlaceholder' id='viz4'></div>
+  <div class='tableauPlaceholder' id='viz4'>
+    <object class='tableauViz'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='RoomBoardTrendsbyInstitutionType20132020/RoomBoardTrendsbyInstitutionType20132020' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
 
   <script type='text/javascript'>
-    const tableauCharts = [
-      {
-        id: 'viz1',
-        name: 'TuitionTrendsbyInstitutionType20132020/TuitionTrendsbyInstitutionType20132020',
-        img: 'https://public.tableau.com/static/images/Tu/TuitionTrendsbyInstitutionType20132020/TuitionTrendsbyInstitutionType20132020/1_rss.png'
-      },
-      {
-        id: 'viz2',
-        name: 'AverageCollegeTuitionbyU_S_State2020/AverageCollegeTuitionbyU_S_State2020',
-        img: 'https://public.tableau.com/static/images/Av/AverageCollegeTuitionbyU_S_State2020/AverageCollegeTuitionbyU_S_State2020/1_rss.png'
-      },
-      {
-        id: 'viz3',
-        name: 'TotalUndergraduateCostbyInstitutionType2020/TotalUndergraduateCostbyInstitutionType2020',
-        img: 'https://public.tableau.com/static/images/To/TotalUndergraduateCostbyInstitutionType2020/TotalUndergraduateCostbyInstitutionType2020/1_rss.png'
-      },
-      {
-        id: 'viz4',
-        name: 'RoomBoardTrendsbyInstitutionType20132020/RoomBoardTrendsbyInstitutionType20132020',
-        img: 'https://public.tableau.com/static/images/Ro/RoomBoardTrendsbyInstitutionType20132020/RoomBoardTrendsbyInstitutionType20132020/1_rss.png'
-      }
-    ];
-
-    tableauCharts.forEach(chart => {
-      const div = document.getElementById(chart.id);
-      div.innerHTML = `
-        <noscript>
-          <a href="#"><img alt="Chart image" src="${chart.img}" style="border: none" /></a>
-        </noscript>
-        <object class="tableauViz" style="display:none;">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param name="name" value="${chart.name}" />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-        </object>
-      `;
-
-      const vizElement = div.getElementsByTagName('object')[0];
-      vizElement.style.width = '640px';
-      vizElement.style.height = '480px';
-
-      const scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    document.querySelectorAll('.tableauViz').forEach(viz => {
+      viz.style.width = '640px';
+      viz.style.height = '480px';
     });
+
+    const script = document.createElement('script');
+    script.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    document.body.appendChild(script);
   </script>
 
 </body>
 </html>
+
